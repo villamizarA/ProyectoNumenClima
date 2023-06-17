@@ -7,13 +7,13 @@ import Card from './Card.jsx';
 
 const Weatherapi = () => {
 
-    let urlCurrent = "http://api.weatherapi.com/v1/current.json?key=87eff0a7030949eeab9205937230206&lang=es";
+    let urlCurrent = "https://api.weatherapi.com/v1/current.json?key=87eff0a7030949eeab9205937230206&lang=es";
     let cityUrl = "&q=";
 
 
 
 
-    let urlForecast = "http://api.weatherapi.com/v1/forecast.json?key=87eff0a7030949eeab9205937230206&q=ciudad&days=10&aqi=no&alerts=yes&lang=es";
+    let urlForecast = "https://api.weatherapi.com/v1/forecast.json?key=87eff0a7030949eeab9205937230206&q=ciudad&days=10&aqi=no&alerts=yes&lang=es";
     const [current, setcurrent] = useState([]);
     const [forecast, setForecast] = useState([]);
     const [loading, setLoading] = useState(false);
